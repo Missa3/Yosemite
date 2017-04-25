@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(ypics/halfdome2.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+hr{
+  width: 30%;
+}
+
+.box, .content {
+
+    color: white;
+    width: 50%;
+    float: left;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.box>.words {
+  text-align: center;
+    margin: 12% 0 ;
+}
+
+.content .words {
+  text-align: center;
+    margin: 40% 0;
+}
+
+#wildlife, #act {
+    background-position: bottom;
+}
+
+#att {
+    background-position: top;
+}
