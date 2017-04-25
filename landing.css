@@ -8,29 +8,70 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     margin: 0;
-}
-hr{
-  width: 30%;
-}
-
-.box, .content {
-
     color: white;
+}
+
+hr {
+    width: 50%;
+    transition: width .5s ease-in-out;
+}
+
+#menu {
+    position: absolute;
+    margin: 10px 0 0 10px;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    transition: transform 1s ease-in-out;
+}
+
+#menu:hover {
+    transform: rotatey(360deg);
+}
+
+#nav {
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 100px;
+    font-size: 1.2em;
+    padding-top: 8%;
+    /*display: none;*/
+}
+
+#nav hr {
+    /*transition: width 1s linear;*/
+    width: 10%;
+    display: inline-block;
+}
+
+h2:hover > hr {
+    width: 100%;
+    display: inline-block;
+    margin: 0 5px 6px 5px;
+}
+
+.box, #content {
     width: 50%;
     float: left;
     background-size: cover;
     box-sizing: border-box;
 }
 
-
-.box>.words {
-  text-align: center;
-    margin: 12% 0 ;
+.dark {
+    background: rgba(0, 0, 0, .4);
 }
 
-.content .words {
-  text-align: center;
-    margin: 40% 0;
+.box>.words {
+    text-align: center;
+    padding: 13% 0;
+}
+
+#content .words {
+    text-align: center;
+    padding: 50% 0;
 }
 
 #wildlife, #act {
