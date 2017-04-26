@@ -60,6 +60,7 @@ h2:hover hr {
     float: left;
     background-size: cover;
     box-sizing: border-box;
+    transition: background-image .1s linear;
 }
 
 .dark {
@@ -69,7 +70,7 @@ h2:hover hr {
 .box .words {
     text-align: center;
     padding: 13% 0;
-    transition: background .7s linear;
+    transition: all .7s linear;
 }
 
 #content .words {
