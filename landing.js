@@ -27,15 +27,21 @@ function hover(x) {
 }
 hover(main);
 
+
 menu.addEventListener("click", function() {
     // var nav = this.previousElementSibling;
     if (nav.style.display == "block") {
         nav.style.display = "none";
+        menu.classList.remove("fa-times");
+        menu.className += " fa-bars"
     } else {
         nav.style.display = "block";
+        menu.classList.remove("fa-bars");
+        menu.className += " fa-times"
+
     }
 });
-// 
+
 // for (var i = 0; i < nav.children.length; i++) {
 //     nav.children[i].addEventListener("mouseenter", function() {
 // this.innerHTML="<hr>" + this.textContent + "<hr>";

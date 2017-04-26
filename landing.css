@@ -22,11 +22,11 @@ hr {
     top: 10px;
     left: 10px;
     padding: 10px;
-    transition: transform 1s ease-in-out;
+    transition: transform .5s ease-in-out;
 }
 
 #menu:hover {
-    transform: rotatey(360deg);
+    transform: rotatey(360deg) rotateZ(180deg);
 }
 
 #nav {
@@ -38,19 +38,21 @@ hr {
     line-height: 100px;
     font-size: 1.2em;
     padding-top: 8%;
-    /*display: none;*/
+    display: none;
+    transition: transform .5s ease-in-out;
 }
 
-#nav hr {
-    /*transition: width 1s linear;*/
-    width: 10%;
-    display: inline-block;
-}
-
-h2:hover > hr {
-    width: 100%;
+h2 hr {
+    width: 0px;
     display: inline-block;
     margin: 0 5px 6px 5px;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+h2:hover hr {
+    width: 100px;
+    opacity: 1;
 }
 
 .box, #content {
@@ -64,14 +66,16 @@ h2:hover > hr {
     background: rgba(0, 0, 0, .4);
 }
 
-.box>.words {
+.box .words {
     text-align: center;
     padding: 13% 0;
+    transition: background .7s linear;
 }
 
 #content .words {
     text-align: center;
     padding: 50% 0;
+    transition: background .7s linear;
 }
 
 #wildlife, #act {
