@@ -1,4 +1,5 @@
 window.onload = function() {
+   document.body.className += " loaded";
     var pics = [
         'ypics/hiking.png',
         'ypics/yosemitefalls.png',
@@ -30,7 +31,6 @@ window.onload = function() {
 
     hover(main);
     menu.addEventListener("click", function() {
-        // var nav = this.previousElementSibling;
         if (nav.style.display == "block") {
             nav.style.display = "none";
             menu.classList.remove("fa-times");
